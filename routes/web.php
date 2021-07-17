@@ -30,5 +30,11 @@ Route::group(['prefix'=>'admin'], function(){
 
         Route::get('/mail', [MailController::class, 'showMailForm'])->name('admin.mail');
         Route::get('/users', [UserController::class, 'showUsers'])->name('admin.users');
+
+        // Admin User CRUD
+        Route::post('/user/store', [UserController::class, 'store'])->name('admin.store-user');
+        Route::get('/user/edit/{user}', [UserController::class, 'showEditForm'])->name('admin.edit-form');
+        Route::post('/user/destroy/{user}', [UserController::class, 'destroy'])->name('admin.destroy-user');
+        Route::post('/user/update/{user}', [UserController::class, 'update'])->name('admin.update-user');
     });
 });

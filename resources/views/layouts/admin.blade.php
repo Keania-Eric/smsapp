@@ -32,13 +32,13 @@
 
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/skins/default.css')}}" />
-
+		<link rel="stylesheet" href="{{asset('assets/vendor/pnotify/pnotify.custom.css')}}" />
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="{{asset('assets/stylesheets/theme-custom.css')}}">
 
 		<!-- Head Libs -->
 		<script src="{{asset('assets/vendor/modernizr/modernizr.js')}}"></script>
-
+		@yield('page-css')
 	</head>
 	<body>
 		<section class="body">
@@ -150,18 +150,22 @@
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
 		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script> -->
+		@yield('page-js')
 		
 		<!-- Theme Base, Components and Settings -->
-		<script src="assets/javascripts/theme.js"></script>
+		<script src="{{asset('assets/javascripts/theme.js')}}"></script>
 		
 		<!-- Theme Custom -->
-		<script src="assets/javascripts/theme.custom.js"></script>
+		<script src="{{asset('assets/javascripts/theme.custom.js')}}"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="assets/javascripts/theme.init.js"></script>
-
+		<script src="{{asset('assets/javascripts/theme.init.js')}}"></script>
+		<!-- Specific Page Vendor -->
+		<script src="{{asset('assets/vendor/pnotify/pnotify.custom.js')}}"></script>
 
 		<!-- Examples -->
-		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
+		<script src="{{asset('assets/javascripts/dashboard/examples.dashboard.js')}}"></script>
+
+		@include('layouts.alerts')
 	</body>
 </html>

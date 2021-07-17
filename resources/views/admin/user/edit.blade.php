@@ -26,16 +26,11 @@
         </header>
 
         <div class="row">
-
-            <div class="col-6">
-                @php($url = route('admin.store-user'))
-                @component('admin.user.components.form-element', ['url'=>$url])
+            <div class="col-xs-12">
+                @php($url = route('admin.update-user', ['user'=>$user->id]))
+                @component('admin.user.components.form-element', ['user'=> $user, 'method'=>'PUT', 'url'=> $url])
                 @endcomponent
-            </div>
-
-            <div class="col-6">
-                @component('admin.user.components.form-bulk')
-                @endcomponent
+               
             </div>
         </div>
 

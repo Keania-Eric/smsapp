@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('phone');
             $table->date('dob');
-            $table->date('anniversay')->nullable(); // Wedding Anniversary
+            $table->date('anniversary')->nullable(); // Wedding Anniversary
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

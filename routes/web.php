@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\MailController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
 /*
@@ -24,5 +26,9 @@ Route::group(['prefix'=>'admin'], function(){
 
     Route::group(['middleware'=> 'auth:admin'], function(){
         Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
+        Route::post('/logout', [AdminLoginController::class, 'logout'])->name('logout');
+
+        Route::get('/mail', [MailController::class, 'showMailForm'])->name('admin.mail');
+        Route::get('/users', [UserController::class, 'showUsers'])->name('admin.users');
     });
 });

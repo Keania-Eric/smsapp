@@ -7,10 +7,18 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\CreateUserRequest;
 use App\Http\Requests\Admin\UpdateUserRequest;
+use App\Imports\UsersImport;
+use Maatwebsite\Excel\Importer;
 
 class UserController extends Controller
 {
-    //
+
+    private $importer;
+
+    public function __construct(Importer $importer)
+    {
+        $this->importer = $importer;
+    }
     
     /**
      * Method showUsers
@@ -101,6 +109,28 @@ class UserController extends Controller
         $user->delete();
 
         return redirect()->back()->with('success', 'User Delete Successfully');
+    }
+
+    
+    /**
+     * Method UploadUsers
+     *
+     * @param Request $request [explicite description]
+     *
+     * @return void
+     */
+    public function uploadUsers(Request $request)
+    {
+        try {
+            
+            $this->importer->import(new UsersImport, $request->file('users'));
+
+            return redirect()->back()->with('success', 'User Uploaded Successfully');
+
+        }catch(\Exception $e) {
+
+            return redirect()->back()->with('failure', $e->getMessage());   
+        }
     }
 
 

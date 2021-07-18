@@ -36,5 +36,6 @@ Route::group(['prefix'=>'admin'], function(){
         Route::get('/user/edit/{user}', [UserController::class, 'showEditForm'])->name('admin.edit-form');
         Route::post('/user/destroy/{user}', [UserController::class, 'destroy'])->name('admin.destroy-user');
         Route::post('/user/update/{user}', [UserController::class, 'update'])->name('admin.update-user');
+        Route::post('/user/upload/excel', [UserController::class, 'uploadUsers'])->name('admin.upload-bulk-users');
     });
 });

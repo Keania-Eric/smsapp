@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 
 class Authenticate extends Middleware
@@ -19,6 +20,9 @@ class Authenticate extends Middleware
         //     return route('admin.login');
         // }
         if (! $request->expectsJson()) {
+            if(Route::is('admin.*')) {
+                return route('admin.login');
+            }
             return route('login');
         }
     }

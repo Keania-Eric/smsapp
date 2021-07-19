@@ -96,7 +96,7 @@
 								</li>
 								<li>
 									<a role="menuitem" tabindex="-1" href="#" onclick="document.getElementById('logout-form').submit()"><i class="fa fa-power-off"></i> Logout</a>
-									<form method="POST" action="{{route('logout')}}" id="logout-form"> {{csrf_field()}} </form>
+									<form method="POST" action="{{route('admin.logout')}}" id="logout-form"> {{csrf_field()}} </form>
 								</li>
 							</ul>
 						</div>

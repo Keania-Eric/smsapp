@@ -6,8 +6,8 @@
 		<meta charset="UTF-8">
 
 		<title>Admin</title>
-		<meta name="keywords" content="HTML5 Admin Template" />
-		<meta name="description" content="JSOFT Admin - Responsive HTML5 Template">
+		<meta name="keywords" content="SMSAPP" />
+		<meta name="description" content="An App form for sms management">
 		<meta name="author" content="JSOFT.net">
 
 		<!-- Mobile Metas -->
@@ -56,30 +56,15 @@
 			
 				<!-- start: search & user box -->
 				<div class="header-right">
-			
-					<form action="pages-search-results.html" class="search nav-form">
-						<div class="input-group input-search">
-							<input type="text" class="form-control" name="q" id="q" placeholder="Search...">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
-							</span>
-						</div>
-					</form>
-			
-					<span class="separator"></span>
-			
 					
-			
 					<span class="separator"></span>
 			
 					<div id="userbox" class="userbox">
 						<a href="#" data-toggle="dropdown">
-							<figure class="profile-picture">
-								<img src="{{asset('assets/images/!logged-user.jpg')}}" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
-							</figure>
+						
 							<div class="profile-info" data-lock-name="{{Auth::guard('admin')->user()->name}}" data-lock-email="{{Auth::guard('admin')->user()->email}}">
 								<span class="name">{{Auth::guard('admin')->user()->name}}</span>
-								<span class="role">administrator</span>
+								<span class="role">Administrator</span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -88,12 +73,6 @@
 						<div class="dropdown-menu">
 							<ul class="list-unstyled">
 								<li class="divider"></li>
-								<li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
-								</li>
-								<li>
-									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
-								</li>
 								<li>
 									<a role="menuitem" tabindex="-1" href="#" onclick="document.getElementById('logout-form').submit()"><i class="fa fa-power-off"></i> Logout</a>
 									<form method="POST" action="{{route('admin.logout')}}" id="logout-form"> {{csrf_field()}} </form>
@@ -124,32 +103,6 @@
 		<script src="{{asset('assets/vendor/magnific-popup/magnific-popup.js')}}"></script>
 		<script src="{{asset('assets/vendor/jquery-placeholder/jquery.placeholder.js')}}"></script>
 		
-		<!-- Specific Page Vendor -->
-		<!-- <script src="{{asset('assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js')}}"></script>
-		<script src="{{('assets/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js')}}"></script>
-		<script src="assets/vendor/jquery-appear/jquery.appear.js"></script>
-		<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-		<script src="assets/vendor/jquery-easypiechart/jquery.easypiechart.js"></script>
-		<script src="assets/vendor/flot/jquery.flot.js"></script>
-		<script src="assets/vendor/flot-tooltip/jquery.flot.tooltip.js"></script>
-		<script src="assets/vendor/flot/jquery.flot.pie.js"></script>
-		<script src="assets/vendor/flot/jquery.flot.categories.js"></script>
-		<script src="assets/vendor/flot/jquery.flot.resize.js"></script>
-		<script src="assets/vendor/jquery-sparkline/jquery.sparkline.js"></script>
-		<script src="assets/vendor/raphael/raphael.js"></script>
-		<script src="assets/vendor/morris/morris.js"></script>
-		<script src="assets/vendor/gauge/gauge.js"></script>
-		<script src="assets/vendor/snap-svg/snap.svg.js"></script>
-		<script src="assets/vendor/liquid-meter/liquid.meter.js"></script>
-		<script src="assets/vendor/jqvmap/jquery.vmap.js"></script>
-		<script src="assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
-		<script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
-		<script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script> -->
 		@yield('page-js')
 		
 		<!-- Theme Base, Components and Settings -->

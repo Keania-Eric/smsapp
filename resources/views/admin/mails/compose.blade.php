@@ -20,32 +20,15 @@
     <section role="main" class="content-body">
 
         <header class="page-header">
-            <h2>Dashboard</h2>
-        
-            <div class="right-wrapper pull-right">
-                <ol class="breadcrumbs">
-                    <li>
-                        <a href="{{route('admin.dashboard')}}">
-                            <i class="fa fa-home"></i>
-                        </a>
-                    </li>
-                    <li><span>Dashboard</span></li>
-                </ol>
-        
-                <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
-            </div>
+            <h2>Send Mail/SMS</h2>
         </header>
 
         <div class="row">
             <div class="col-xs-12">
                 <section class="panel">
                     <header class="panel-heading">
-                        <div class="panel-actions">
-                            <a href="#" class="fa fa-caret-down"></a>
-                            <a href="#" class="fa fa-times"></a>
-                        </div>
         
-                        <h2 class="panel-title">Send Mail</h2>
+                        <h2 class="panel-title">Send Mail/SMS</h2>
                     </header>
                     <div class="panel-body">
                         <form class="form-horizontal form-bordered" method="POST" action="{{route('admin.send-mail')}}">
@@ -82,9 +65,9 @@
 
                             <div class="form-group">
                 
-                                <div class="float-right">
+                                <div class="text-center">
                                     <span class="input-group-btn">
-                                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-primary">Send Mail</button>
+                                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-success">Send Mail</button>
                                     </span>
                                 </div>
                             </div>

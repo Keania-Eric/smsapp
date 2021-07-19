@@ -1,10 +1,5 @@
 <section class="panel">
     <header class="panel-heading">
-        <div class="panel-actions">
-            <a href="#" class="fa fa-caret-down"></a>
-            <a href="#" class="fa fa-times"></a>
-        </div>
-
         <h2 class="panel-title">Bulk User Upload(Excel)</h2>
     </header>
     <div class="panel-body">
@@ -36,9 +31,9 @@
             
             <div class="form-group">
                 
-                <div class="float-right">
+                <div class="text-center">
                     <span class="input-group-btn">
-                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-primary">Upload</button>
+                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-success">Upload</button>
                     </span>
                 </div>
             </div>	

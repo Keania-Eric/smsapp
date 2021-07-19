@@ -6,7 +6,7 @@
   <meta name="x-apple-disable-message-reformatting"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <meta content="telephone=no" name="format-detection"> 
-  <title>Mail Notification</title> 
+  <title>Happy Birthday</title> 
   <!--[if (mso 16)]>
     <style type="text/css">
     a {text-decoration: none;}
@@ -25,9 +25,6 @@
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet"> 
   <!--<![endif]--> 
   <style type="text/css">
-.rollover div {
-	font-size:0;
-}
 #outlook a {
 	padding:0;
 }
@@ -89,23 +86,23 @@ a[x-apple-data-detectors] {
                <!--[if mso]><table style="width:560px" cellpadding="0" cellspacing="0"><tr><td style="width:270px" valign="top"><![endif]--> 
                <table class="es-left" cellspacing="0" cellpadding="0" align="left" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:left"> 
                  <tr style="border-collapse:collapse"> 
-                  <td align="left" style="padding:0;Margin:0;width:270px"> 
+                  <!-- <td align="left" style="padding:0;Margin:0;width:270px"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
                       <td class="es-infoblock" align="left" style="padding:0;Margin:0;line-height:14px;font-size:12px;color:#CCCCCC"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:14px;color:#CCCCCC;font-size:12px">Put your preheader text here</p></td> 
                      </tr> 
-                   </table></td> 
+                   </table></td>  -->
                  </tr> 
                </table> 
                <!--[if mso]></td><td style="width:20px"></td><td style="width:270px" valign="top"><![endif]--> 
                <table class="es-right" cellspacing="0" cellpadding="0" align="right" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;float:right"> 
                  <tr style="border-collapse:collapse"> 
-                  <td align="left" style="padding:0;Margin:0;width:270px"> 
+                  <!-- <td align="left" style="padding:0;Margin:0;width:270px"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
                       <td align="right" class="es-infoblock" style="padding:0;Margin:0;line-height:14px;font-size:12px;color:#CCCCCC"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:14px;color:#CCCCCC;font-size:12px"><a href="https://viewstripo.email" class="view" target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#CCCCCC;font-size:12px">View in browser</a></p></td> 
                      </tr> 
-                   </table></td> 
+                   </table></td>  -->
                  </tr> 
                </table> 
                <!--[if mso]></td></tr></table><![endif]--></td> 
@@ -124,7 +121,7 @@ a[x-apple-data-detectors] {
                   <td valign="top" align="center" style="padding:0;Margin:0;width:520px"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h1 style="Margin:0;line-height:48px;mso-line-height-rule:exactly;font-family:lora, georgia, 'times\ new\ roman', serif;font-size:40px;font-style:normal;font-weight:normal;color:#666666"><em>Hello from {{config('app.name')}}!</em></h1></td> 
+                      <td align="center" style="padding:0;Margin:0"><h1 style="Margin:0;line-height:48px;mso-line-height-rule:exactly;font-family:lora, georgia, 'times\ new\ roman', serif;font-size:40px;font-style:normal;font-weight:normal;color:#666666"><em>Happy Birthday {{$notifiable->name}}!</em></h1></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
@@ -137,7 +134,7 @@ a[x-apple-data-detectors] {
                   <td valign="top" align="center" style="padding:0;Margin:0;width:600px"> 
                    <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0;font-size:0px"><img class="adapt-img" src="https://pjkuyo.stripocdn.email/content/guids/CABINET_5f6ee4eac6870647602ebdcd5c5c5421/images/85741626665891955.png" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" alt="Gift " title="Gift " width="300"></td> 
+                      <td align="center" style="padding:0;Margin:0;font-size:0"><img class="adapt-img" src="https://pjkuyo.stripocdn.email/content/guids/CABINET_b54797fc68edcecf4f6b2835e7bcba32/images/36321522405737710.gif" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" alt="Gift " title="Gift " width="300"></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
@@ -153,7 +150,7 @@ a[x-apple-data-detectors] {
                       <td align="center" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#999999;font-size:14px">{!! $message !!}<br></p></td> 
                      </tr> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0;padding-top:15px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#999999;font-size:14px"><em>Best regards, {{config('app.name')}} team.</em><br></p></td> 
+                      <td align="center" style="padding:0;Margin:0;padding-top:15px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#999999;font-size:14px"><em>Best regards, {{ config('app.name') }} team.</em><br></p></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
@@ -161,7 +158,48 @@ a[x-apple-data-detectors] {
              </tr> 
            </table></td> 
          </tr> 
-       </table></td> 
+       </table> 
+       <table cellpadding="0" cellspacing="0" class="es-footer" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%;background-color:transparent;background-repeat:repeat;background-position:center top"> 
+         <tr style="border-collapse:collapse"> 
+          <td align="center" style="padding:0;Margin:0"> 
+           <table class="es-footer-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:#ffffff;width:600px" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff"> 
+             <tr style="border-collapse:collapse"> 
+              <td align="left" style="padding:0;Margin:0"> 
+               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+                 <tr style="border-collapse:collapse"> 
+                  <td valign="top" align="center" style="padding:0;Margin:0;width:600px"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+                     <tr style="border-collapse:collapse"> 
+                      <!-- <td esdev-links-color="#666666" align="center" class="es-m-txt-с" style="padding:0;Margin:0;padding-top:10px;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color:#666666;font-size:12px">Copyright © 2018 Run, All rights reserved.</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color:#666666;font-size:12px">You are receiving this email because you have visited our site or asked us about regular newsletter.</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:18px;color:#666666;font-size:12px"><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#666666;font-size:12px;line-height:18px" class="unsubscribe" href="">Unsubscribe</a></p></td>  -->
+                     </tr> 
+                   </table></td> 
+                 </tr> 
+               </table></td> 
+             </tr> 
+           </table></td> 
+         </tr> 
+       </table> 
+       <!-- <table class="es-content" cellspacing="0" cellpadding="0" align="center" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%"> 
+         <tr style="border-collapse:collapse"> 
+          <td align="center" style="padding:0;Margin:0"> 
+           <table class="es-content-body" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;background-color:transparent;width:600px" cellspacing="0" cellpadding="0" align="center"> 
+             <tr style="border-collapse:collapse"> 
+              <td align="left" style="Margin:0;padding-left:20px;padding-right:20px;padding-top:30px;padding-bottom:30px"> 
+               <table width="100%" cellspacing="0" cellpadding="0" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+                 <tr style="border-collapse:collapse"> 
+                  <td valign="top" align="center" style="padding:0;Margin:0;width:560px"> 
+                   <table width="100%" cellspacing="0" cellpadding="0" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
+                     <tr style="border-collapse:collapse"> 
+                      <td class="es-infoblock made_with" align="center" style="padding:0;Margin:0;line-height:120%;font-size:0;color:#CCCCCC"><a target="_blank" href="https://viewstripo.email/?utm_source=templates&utm_medium=email&utm_campaign=software&utm_content=birthday" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#CCCCCC;font-size:12px"><img src="https://pjkuyo.stripocdn.email/content/guids/CABINET_9df86e5b6c53dd0319931e2447ed854b/images/64951510234941531.png" alt width="125" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td> 
+                     </tr> 
+                   </table></td> 
+                 </tr> 
+               </table></td> 
+             </tr> 
+           </table></td> 
+         </tr> 
+       </table> -->
+    </td> 
      </tr> 
    </table> 
   </div>  

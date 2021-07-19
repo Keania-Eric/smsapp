@@ -51,7 +51,7 @@ class BirthdayNotification extends Notification
     {
         return (new MailMessage)
                 ->subject('HAPPY BIRTHDAY !')
-                ->markdown('mails.admin_message', ['message'=> $this->message]);
+                ->markdown('mails.birthday', ['message'=> $this->message, 'notifiable'=>$notifiable]);
     }
     
     /**

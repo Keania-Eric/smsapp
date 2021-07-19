@@ -1,9 +1,5 @@
 <section class="panel">
     <header class="panel-heading">
-        <div class="panel-actions">
-            <a href="#" class="fa fa-caret-down"></a>
-            <a href="#" class="fa fa-times"></a>
-        </div>
         @if(isset($user))
             <h2 class="panel-title">Edit {{$user->name}}</h2>
         @else
@@ -65,7 +61,7 @@
             
             <div class="form-group">
                 
-                <div class="float-right">
+                <div class="text-center">
                     <span class="input-group-btn">
                         <button type="submit" class="mb-xs mt-xs mr-xs btn btn-primary">Primary</button>
                     </span>

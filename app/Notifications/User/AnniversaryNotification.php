@@ -51,7 +51,7 @@ class AnniversaryNotification extends Notification
     {
         return (new MailMessage)
                     ->subject('HAPPY ANNIVERSARY !')
-                    ->markdown('mails.admin_message', ['message'=> $this->message]);
+                    ->markdown('mails.anniversary', ['message'=> $this->message, 'notifiable'=> $notifiable]);
     }
     
     /**

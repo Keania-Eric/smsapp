@@ -22,7 +22,6 @@
                     </li>
                     <li>
                         <a href="{{route('admin.mail')}}">
-                            <span class="pull-right label label-primary">182</span>
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>Mail</span>
                         </a>
@@ -32,6 +31,20 @@
                         <a href="{{route('admin.users')}}">
                             <i class="fa fa-users" aria-hidden="true"></i>
                             <span>Users</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{route('admin.draft-edit')}}">
+                            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+                            <span>Message Drafts</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{route('admin.sms-logs')}}">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                            <span>SMS Logs</span>
                         </a>
                     </li>
 

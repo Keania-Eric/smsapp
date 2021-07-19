@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Services\SMS;
+use App\Contracts\ShortMessageService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->bind(ShortMessageService::class, SMS::class);
     }
 
     /**

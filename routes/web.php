@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\MailController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\SMSLogController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\MessageDraftController;
 use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
 
 /*

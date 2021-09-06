@@ -39,7 +39,7 @@ class SendBirthdayMessages extends Command
      */
     public function handle()
     {
-        User::anniversariesToday()->chunk(50, function($users){
+        User::birthdaysToday()->chunk(50, function($users){
             foreach($users as $user) {
                 $user->notify(new BirthdayNotification());
             }

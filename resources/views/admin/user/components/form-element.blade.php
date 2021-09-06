@@ -63,7 +63,7 @@
                 
                 <div class="text-center">
                     <span class="input-group-btn">
-                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-primary">Primary</button>
+                        <button type="submit" class="mb-xs mt-xs mr-xs btn btn-primary">Submit</button>
                     </span>
                 </div>
             </div>	

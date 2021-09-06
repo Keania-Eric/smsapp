@@ -20,6 +20,8 @@ use App\Http\Controllers\Admin\Auth\LoginController as AdminLoginController;
 */
 
 Route::get('/', function () {
+    \Artisan::call('cache:clear');
+    \Artisan::call('config:clear');
     return view('welcome');
 });
 

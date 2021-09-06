@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Trait\SanitizeRequest;
+use App\Traits\SanitizeRequest;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rules;
 
